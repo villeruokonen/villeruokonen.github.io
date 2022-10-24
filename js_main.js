@@ -6,6 +6,7 @@ function handle_link(index) {
             break;
         case 1:
             window.open("projects.html", "_parent");
+            break;
         case 2: //linktree link index
             window.open("https://linktr.ee/villeruo");
             break;
