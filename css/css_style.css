@@ -35,7 +35,7 @@ body {
     white-space: unset;
     height: 100%;
     background: linear-gradient(270deg, rgba(112, 144, 178, 1), rgba(106, 165, 177, 1) 100%);
-    background-image: url("rsc/bg.png");
+    background-image: url("../rsc/bg.png");
     opacity: 0.3;
     background-position: 25%;
     background-size: cover;
@@ -214,8 +214,9 @@ body {
     font-weight: lighter;
     color:#183b73;
     font-size: 32px;
-    width: fit-content;
-    display: inline-block;
+    
+    display:table-row;
+    position:absolute;
     transform: translate(290%, 0);
     text-align: center;
 }
@@ -261,7 +262,7 @@ body {
 
 .self_photo {
     transform: translate(-200px, 75px);
-    background-image: url(rsc/photo_self.jpeg);
+    background-image: url(../rsc/photo_self.jpeg);
     background-size: contain;
     border-radius: 25%;
     border-color: #ffffff;
