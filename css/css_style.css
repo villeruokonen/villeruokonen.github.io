@@ -337,7 +337,7 @@ body {
     text-align: center;
 }
 
-.link0 {
+.link_about {
     display: inline-flex;
     width: min-content;
     height: min-content;
@@ -349,43 +349,55 @@ body {
     height: min-content;
 }
 
-.link1 {
+.link_brickworld {
     display: inline-flex;
     width: min-content;
     height: min-content;
 }
 
-.link2 {
+.link_github {
     display: inline-flex;
     width: min-content;
     height: min-content;
 }
 
-.link3 {
+.link_linktree {
+    display: inline-flex;
+    width: min-content;
+    height: min-content;
+
+
+}
+.link_linkedin {
     display: inline-flex;
     width: min-content;
     height: min-content;
 }
 
-.link0:hover {
+.link_about:hover {
     color: #10507b;
     cursor: pointer;
     text-decoration: underline;
 }
 
-.link1:hover {
+.link_brickworld:hover {
     color: #10507b;
     cursor: pointer;
     text-decoration: underline;
 }
 
-.link2:hover {
+.link_github:hover {
     color: #10507b;
     cursor: pointer;
     text-decoration: underline;
 }
 
-.link3:hover {
+.link_linktree:hover {
+    color: #10507b;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.link_linkedin:hover {
     color: #10507b;
     cursor: pointer;
     text-decoration: underline;
