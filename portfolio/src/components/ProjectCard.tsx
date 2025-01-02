@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
     
     if (desc.length > previewLength)
     {
-        desc = project.description.slice(0, previewLength - ellipsis.length) + ellipsis;
+        desc = project.description.slice(0, previewLength - ellipsis.length).trimEnd() + ellipsis;
     }
 
     return (
