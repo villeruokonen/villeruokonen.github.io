@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Slug Wars",
-        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production.",
+        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as learning to work under pressure. The game was released on Steam on January 16th, 2025.",
         "technologies": [
             "C#",
             "Unity"
@@ -14,6 +14,19 @@
         "link": {
             "url": "",
             "text": "Coming soon..."
+        }
+    },
+    {
+        "id": 1,
+        "title": "OpenGL Game Engine",
+        "description": "I developed an OpenGL game engine during my studies at Jamk University of Applied Sciences, on the Game Engine Programming course. This course helped me solidify my understanding of C++ and lower-level programming.",
+        "technologies": [
+            "C++",
+            "OpenGL"
+        ],
+        "link": {
+            "url": "https://github.com/villeruokonen/GameEngineProgramming",
+            "text": "GitHub repository"
         }
     },
     {
