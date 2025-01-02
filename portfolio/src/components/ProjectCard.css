@@ -20,6 +20,7 @@
 .badges {
     margin-top: 10px;
     justify-content: space-between;
+    align-items: center;
     display: inline-flex;
     gap: 8px;
     width: 100%;
