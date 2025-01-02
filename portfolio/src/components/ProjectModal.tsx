@@ -1,3 +1,4 @@
+import { FaX } from "react-icons/fa6";
 import ProjectData from "../models/ProjectData";
 import './ProjectModal.css'
 
@@ -18,7 +19,7 @@ const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
                 
                 <p>{project.description}</p>
                 <button className="modal-close" onClick={onClose}>
-                    Close
+                    <FaX></FaX>
                 </button>
             </div>
         </div>
