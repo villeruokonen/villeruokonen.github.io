@@ -1,0 +1,16 @@
+header {
+    align-content: center;
+}
+
+.socials-list {
+    list-style-type: none;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.socials-item {
+    margin: 0 16px;
+}

@@ -37,11 +37,17 @@ const RoleBadgeGroup: React.FC<{ roles: string[] }> = ({ roles }) => {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
     const previewLength: number = 100;
     const ellipsis: string = "...";
+    let desc = project.description;
+    
+    if (desc.length > previewLength)
+    {
+        desc = project.description.slice(0, previewLength - ellipsis.length) + ellipsis;
+    }
 
     return (
         <div className="container" onClick={onClick}>
             <h3> {project.title || "Untitled entry"} </h3>
-            <p> {project.description.slice(0, previewLength - ellipsis.length) + ellipsis || "Read more...."} </p>
+            <p> {desc || "Read more...."} </p>
 
             <span className='badges'>
                 <TechnologyBadgeGroup technologies={project.technologies} />

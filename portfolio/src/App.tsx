@@ -1,15 +1,17 @@
 import './App.css'
 import ProjectList from './components/ProjectList';
+import Header from './components/Header'
 
 function App() {
   return (
     <>
-      <h1>Portfolio</h1>
+      <Header/>
       <main>
+        <h2>Stuff I've done</h2>
         <ProjectList />
       </main>
       <footer id='footer'>
-        © Ville Ruokonen (2025)
+        <p>© Ville Ruokonen (2025)</p>
       </footer>
     </>
   )
