@@ -10,7 +10,7 @@
         "roles": [
             "Lead Programmer",
             "Audio Director"
-            ],
+        ],
         "link": {
             "url": "",
             "text": "Coming soon..."
@@ -36,11 +36,27 @@
         "description": "The page you are on right now was created using React with TS, to both help me improve my web development skills and to show my understanding of it (and gather all my work in one space).",
         "roles": [
             "Developer"
-            ],
+        ],
         "technologies": [
-            "React" ,
+            "React",
             "TypeScript"
-          ],
+        ],
         "link": {}
+    },
+    {
+        "id": 3,
+        "title": "BrickWorld",
+        "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to do it with trial and error. I also learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally, one of my first forays into multiplayer and netcode as well.",
+        "technologies": [
+            "C#",
+            " Unity"
+        ],
+        "roles": [
+            "Game Developer"
+        ],
+        "link": {
+            "url": "",
+            "text": ""
+        }
     }
 ]
