@@ -3,4 +3,6 @@ export default interface ProjectData {
     title: string;
     description: string;
     imageUrl: string;
+    technologies: string[];
+    roles: string[];
 }

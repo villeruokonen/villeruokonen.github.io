@@ -1,13 +1,13 @@
 import ProjectData from "../models/ProjectData";
 import './Modal.css'
 
-interface ModalProps {
+interface ProjectModal {
     project: ProjectData | null;
     onClose: () => void;
     children: React.ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({ project, onClose }) => {
+const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
     if (!project)
         return null;
 
@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ project, onClose }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <h2>{project.title}</h2>
-                <img src={project.imageUrl} alt={project.title}/>
+                
                 <p>{project.description}</p>
                 <button className="modal-close" onClick={onClose}>
                     Close
@@ -25,4 +25,4 @@ const Modal: React.FC<ModalProps> = ({ project, onClose }) => {
     );
 };
 
-export default Modal;
+export default ProjectModal;

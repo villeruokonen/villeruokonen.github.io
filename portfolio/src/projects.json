@@ -1,12 +1,29 @@
 [
     {
         "id": 0,
-        "title": "Project 1",
-        "description": "Project description for project 1"
+        "title": "Slug Wars",
+        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Lead Programmer",
+            "Audio Director"
+            ],
+        "link": {
+            "url": "",
+            "text": "Coming soon..."
+        }
     },
     {
-        "id": 1,
-        "title": "Project 2",
-        "description": "The second project's description"
+        "id": 3,
+        "title": "This portfolio page!",
+        "description": "The page you are on right now was created using React with TS.",
+        "role": "Everything",
+        "technologies": [
+            "React" ,
+            "TypeScript"
+          ]
     }
 ]

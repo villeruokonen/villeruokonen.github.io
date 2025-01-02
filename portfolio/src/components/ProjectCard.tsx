@@ -1,16 +1,52 @@
+import ProjectData from '../models/ProjectData';
+import RoleBadge from './RoleBadge';
+import TechnologyBadge from './TechnologyBadge';
 import './ProjectCard.css'
 
 interface ProjectCardProps {
-    title: string,
-    preview: string,
+    project: ProjectData;
     onClick: () => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, preview, onClick}) => {
+const TechnologyBadgeGroup: React.FC<{ technologies: string[] }> = ({ technologies }) => {
+    if (!technologies || technologies.length == 0)
+        return (<></>);
+
+    return (
+        <div className='badges-technologies'>
+            {technologies.map((tech) => (
+                <TechnologyBadge technologyName={tech} />
+            ))}
+        </div>
+    );
+}
+
+const RoleBadgeGroup: React.FC<{ roles: string[] }> = ({ roles }) => {
+    if (!roles || roles.length == 0)
+        return (<></>);
+
+    return (
+        <div className='badges-roles'>
+            {roles.map((tech) => (
+                <RoleBadge title={tech} />
+            ))}
+        </div>
+    );
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+    const previewLength: number = 100;
+    const ellipsis: string = "...";
+
     return (
         <div className="container" onClick={onClick}>
-            <h3> {title || "Untitled entry"} </h3>
-            <p> {preview || "Read more...."} </p>
+            <h3> {project.title || "Untitled entry"} </h3>
+            <p> {project.description.slice(0, previewLength - ellipsis.length) + ellipsis || "Read more...."} </p>
+
+            <span className='badges'>
+                <TechnologyBadgeGroup technologies={project.technologies} />
+                <RoleBadgeGroup roles={project.roles}/>
+            </span>
         </div>
     );
 }

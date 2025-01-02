@@ -1,0 +1,8 @@
+.technology-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: inline-block;
+}

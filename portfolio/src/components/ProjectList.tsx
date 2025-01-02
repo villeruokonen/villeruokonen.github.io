@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard"
 import ProjectData from "../models/ProjectData"
 import { useEffect, useState } from 'react'
 import { getProjects } from '../services/projectService'
-import Modal from './Modal'
+import ProjectModal from './ProjectModal'
 
 const ProjectList: React.FC = () => {
     const [projects, setProjects] = useState<ProjectData[]>([]);
@@ -25,8 +25,7 @@ const ProjectList: React.FC = () => {
         loadProjects();
     }, []);
 
-    const previewLength: number = 16;
-    const ellipsis: string = "...";
+    
 
     if (loading) {
         return <h1>Loading...</h1>
@@ -39,13 +38,12 @@ const ProjectList: React.FC = () => {
 
     return (
         <div>
-            <Modal project={selectedProject} onClose={closeModal} children />
+            <ProjectModal project={selectedProject} onClose={closeModal} children />
 
             <div className="project-list">
                 {projects.map((p) => (
                     <ProjectCard
-                        title={p.title}
-                        preview={p.description.slice(0, previewLength - ellipsis.length) + ellipsis}
+                        project={p}
                         onClick={() => openModal(p)}>
                     </ProjectCard>
                 ))}

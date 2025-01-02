@@ -17,6 +17,26 @@
     line-height: 1.5;
 }
 
+.badges {
+    margin-top: 10px;
+    justify-content: space-between;
+    display: inline-flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.badges-technologies {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.badges-roles {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
 .container:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
