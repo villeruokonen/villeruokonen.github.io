@@ -20,7 +20,9 @@
         "id": 3,
         "title": "This portfolio page!",
         "description": "The page you are on right now was created using React with TS.",
-        "role": "Everything",
+        "roles": [
+            "Developer"
+            ],
         "technologies": [
             "React" ,
             "TypeScript"
