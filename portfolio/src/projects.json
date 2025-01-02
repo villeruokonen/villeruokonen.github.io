@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Slug Wars",
-        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as learning to work under pressure. The game was released on Steam on January 16th, 2025.",
+        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure. The game was released on Steam on January 16th, 2025.",
         "technologies": [
             "C#",
             "Unity"
@@ -24,21 +24,23 @@
             "C++",
             "OpenGL"
         ],
+        "roles": [],
         "link": {
             "url": "https://github.com/villeruokonen/GameEngineProgramming",
             "text": "GitHub repository"
         }
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "This portfolio page!",
-        "description": "The page you are on right now was created using React with TS.",
+        "description": "The page you are on right now was created using React with TS, to both help me improve my web development skills and to show my understanding of it (and gather all my work in one space).",
         "roles": [
             "Developer"
             ],
         "technologies": [
             "React" ,
             "TypeScript"
-          ]
+          ],
+        "link": {}
     }
 ]
