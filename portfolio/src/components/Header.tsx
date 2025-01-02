@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope, FaSpotify } from 'react-icons/fa';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -20,8 +19,8 @@ const Header: React.FC = () => {
                         </a>
                     </li>
                     <li className="socials-item">
-                        <a href="https://www.x.com/VRuokonen" target="_blank" rel="noopener noreferrer">
-                            <FaXTwitter size={30} />
+                        <a href="https://open.spotify.com/artist/0uF9xi8QRc91KFya6jUteO?si=5WFbBKD-RdiKvsleMUN2RA" target="_blank" rel="noopener noreferrer">
+                            <FaSpotify size={30} />
                         </a>
                     </li>
                     <li className="socials-item">
