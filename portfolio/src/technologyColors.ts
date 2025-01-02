@@ -1,5 +1,5 @@
 const technologyColors: { [key: string]: string; } = {
-    'React': '#61DAFB',
+    'React': '#20232A',
     'TypeScript': '#007ACC',
     'JavaScript': '#F7DF1E',
     'C#': '#68217A',
@@ -11,7 +11,7 @@ const technologyColors: { [key: string]: string; } = {
 };
 
 const technologyAccentColors: { [key: string]: string } = {
-    'React': '#20232A',
+    'React': '#61DAFB',
     'TypeScript': '#FFFFFF',
     'JavaScript': '#000000',
     'C#': '#FFFFFF',
