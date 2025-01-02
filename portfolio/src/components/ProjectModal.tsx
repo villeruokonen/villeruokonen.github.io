@@ -1,5 +1,5 @@
 import ProjectData from "../models/ProjectData";
-import './Modal.css'
+import './ProjectModal.css'
 
 interface ProjectModal {
     project: ProjectData | null;
