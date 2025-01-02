@@ -6,7 +6,7 @@
 }
 
 #footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   color: #888;
   text-align: center;
