@@ -31,11 +31,6 @@ const ProjectList: React.FC = () => {
         return <h1>Loading...</h1>
     }
 
-    //if (selectedProject)
-    //{
-    //    return <Modal project={selectedProject} onClose={closeModal} children />
-    //}
-
     return (
         <div>
             <ProjectModal project={selectedProject} onClose={closeModal} children />
