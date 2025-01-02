@@ -10,9 +10,6 @@ function App() {
         <h2>Stuff I've done</h2>
         <ProjectList />
       </main>
-      <footer id='footer'>
-        <p>© Ville Ruokonen (2025)</p>
-      </footer>
     </>
   )
 }
