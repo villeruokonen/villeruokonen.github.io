@@ -1,6 +1,7 @@
 import { FaX } from "react-icons/fa6";
 import ProjectData from "../models/ProjectData";
 import './ProjectModal.css'
+import ModalLinkDisplay from "./ModalLinkDisplay";
 
 interface ProjectModal {
     project: ProjectData | null;
@@ -16,10 +17,10 @@ const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <h2>{project.title}</h2>
-                
                 <p>{project.description}</p>
+                <ModalLinkDisplay links={project.links} />
                 <button className="modal-close" onClick={onClose}>
-                    <FaX></FaX>
+                    <FaX />
                 </button>
             </div>
         </div>
