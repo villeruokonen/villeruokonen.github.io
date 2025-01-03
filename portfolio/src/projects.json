@@ -28,7 +28,10 @@
             "C++",
             "OpenGL"
         ],
-        "roles": [],
+        "roles": [
+            "Engine Programmer",
+            "Graphics Programmer"
+        ],
         "links": [
             {
                 "url": "https://github.com/villeruokonen/GameEngineProgramming",
