@@ -1,4 +1,4 @@
-.container {
+.card {
     padding: 20px;
     background-color: rgba(66, 69, 70, 0.4);
     border-radius: 8px;
@@ -6,10 +6,28 @@
     backdrop-filter: saturate(180%) blur(10px);
 }
 
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px) scale(1.01) translateZ(0) perspective(1px);
+    backface-visibility: hidden;
+    transition: all 0.1s ease-in-out;
+    background-color: rgba(45, 47, 47, 0.5);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
 .h3 {
     color: aliceblue;
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.date {
+    position: absolute;
+    font-size: medium;
+    font-weight: normal;
+    text-align: right;
+    right: 32px;
 }
 
 .p {
@@ -37,14 +55,4 @@
     display: flex;
     justify-content: flex-end;
     gap: 4px;
-}
-
-.container:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px) scale(1.01) translateZ(0) perspective(1px);
-    backface-visibility: hidden;
-    transition: all 0.1s ease-in-out;
-    background-color: rgba(45, 47, 47, 0.5);
-    backdrop-filter: blur(12px);
-    cursor: pointer;
 }

@@ -36,11 +36,15 @@ const ProjectList: React.FC = () => {
             <ProjectModal project={selectedProject} onClose={closeModal} children />
 
             <div className="project-list">
-                {projects.map((p) => (
-                    <ProjectCard
-                        project={p}
-                        onClick={() => openModal(p)}>
-                    </ProjectCard>
+                {projects
+                    .sort((a, b) => 
+                        new Date(b.date).getTime() - new Date(a.date).getTime()
+                    )
+                    .map((p) => (
+                        <ProjectCard
+                            project={p}
+                            onClick={() => openModal(p)}>
+                        </ProjectCard>
                 ))}
             </div>
         </div>

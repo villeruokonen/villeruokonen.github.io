@@ -45,9 +45,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
     }
 
     return (
-        <div className="container" onClick={onClick}>
-            <h3> {project.title || "Untitled entry"} </h3>
-            <p> {desc || "Read more...."} </p>
+        <div className="card" onClick={onClick}>
+            <h3 className='title'> 
+                {project.title || "Untitled entry"} 
+                <span className='date'> {project.date.replace('-', ' ')} </span>
+            </h3>
+            
+            <p className='description'> {desc || "Read more...."} </p>
 
             <span className='badges'>
                 <TechnologyBadgeGroup technologies={project.technologies} />

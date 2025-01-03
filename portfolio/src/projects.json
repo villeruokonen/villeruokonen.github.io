@@ -2,6 +2,7 @@
     {
         "id": 0,
         "title": "Slug Wars",
+        "date": "Jan-2025",
         "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure. The game was released on Steam on January 16th, 2025.",
         "technologies": [
             "C#",
@@ -21,6 +22,7 @@
     {
         "id": 1,
         "title": "OpenGL Game Engine",
+        "date": "Nov-2024",
         "description": "I developed an OpenGL game engine during my studies at Jamk University of Applied Sciences, on the Game Engine Programming course. This course helped me solidify my understanding of C++ and lower-level programming.",
         "technologies": [
             "C++",
@@ -37,6 +39,7 @@
     {
         "id": 2,
         "title": "This portfolio page!",
+        "date": "Jan-2025",
         "description": "The page you are on right now was created using React with TS, to both help me improve my web development skills and to show my understanding of it (and gather all my work in one space).",
         "roles": [
             "Developer"
@@ -55,18 +58,58 @@
     {
         "id": 3,
         "title": "BrickWorld",
+        "date": "Dec-2022",
         "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to do it with trial and error. I also learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally, one of my first forays into multiplayer and netcode as well.",
         "technologies": [
             "C#",
-            " Unity"
+            "Unity"
         ],
         "roles": [
             "Game Developer"
         ],
         "links": [
             {
-                "url": "",
-                "title": ""
+                "url": "https://villeruo.itch.io/brickworld",
+                "title": "Play BrickWorld in browser"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "One hour game",
+        "date": "Dec-2024",
+        "description": "A \"microgame\" created within one hour during my studies at Jamk on the Game Engine 2 course.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Game Developer"
+        ],
+        "links": [
+            {
+                "url": "https://villeruo.itch.io/one-hour-game",
+                "title": "Play One hour game in browser"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Royal Banter",
+        "date": "Jan-2024",
+        "description": "Global Game Jam 2024. You must make the king laugh by completing fast-paced minigames. I was in charge of designing and implementing the minigame system for our other programmers to use, using careful scene management",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Lead Programmer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://oguzhan00yildiz.itch.io/royal-banter",
+                "title": "Download Royal Banter on itch.io"
             }
         ]
     }
