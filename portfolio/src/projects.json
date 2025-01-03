@@ -112,5 +112,64 @@
                 "title": "Download Royal Banter on itch.io"
             }
         ]
+    },
+    {
+        "id": 6,
+        "title": "Halloween Madness",
+        "date": "Nov-2024",
+        "description": "BitJam 2024. Protect your yard from incoming monsters. I was in charge of doing technical design and implementation of the buying-placing system for the traps.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Lead Programmer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://oguzhan00yildiz.itch.io/halloween-madness",
+                "title": "Download Halloween Madness on itch.io"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Lupus Veganus",
+        "date": "Jan-2024",
+        "description": "A prototype for a survival game where you play as a vegan wolf. I was in charge of programming the enemy AI, and I implemented a simple Blueprint-extensible state machine in C++.",
+        "technologies": [
+            "C++",
+            "Unreal"
+        ],
+        "roles": [
+            "Programmer"
+        ],
+        "links": [
+            {
+                "url": "https://github.com/Surkia-Games/The-Game",
+                "title": "GitHub repository"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "CureBot",
+        "date": "Nov-2023",
+        "description": "EXPA Game Jam 2023. You play as a delivery robot, transporting the cure. I was in charge of implementing the movement and physics of the robot, as well as composing the background music.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Programmer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://oguzhan00yildiz.itch.io/curebot",
+                "title": "Download CureBot on itch.io"
+            }
+        ]
     }
 ]
