@@ -1,0 +1,11 @@
+.skill-container {
+    padding-bottom: 10px;
+}
+
+.skill-badges {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    width: 100%;
+}
