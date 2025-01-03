@@ -11,10 +11,12 @@
             "Lead Programmer",
             "Audio Director"
         ],
-        "link": {
-            "url": "",
-            "text": "Coming soon..."
-        }
+        "links": [
+            {
+                "url": "",
+                "title": ""
+            }
+        ]
     },
     {
         "id": 1,
@@ -25,10 +27,12 @@
             "OpenGL"
         ],
         "roles": [],
-        "link": {
-            "url": "https://github.com/villeruokonen/GameEngineProgramming",
-            "text": "GitHub repository"
-        }
+        "links": [
+            {
+                "url": "https://github.com/villeruokonen/GameEngineProgramming",
+                "title": "GitHub repository"
+            }
+        ]
     },
     {
         "id": 2,
@@ -41,7 +45,12 @@
             "React",
             "TypeScript"
         ],
-        "link": {}
+        "links": [
+            {
+                "url": "",
+                "title": ""
+            }
+        ]
     },
     {
         "id": 3,
@@ -54,9 +63,11 @@
         "roles": [
             "Game Developer"
         ],
-        "link": {
-            "url": "",
-            "text": ""
-        }
+        "links": [
+            {
+                "url": "",
+                "title": ""
+            }
+        ]
     }
 ]
