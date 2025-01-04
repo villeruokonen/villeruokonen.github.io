@@ -5,6 +5,7 @@ import './ProjectCard.css'
 
 interface ProjectCardProps {
     project: ProjectData;
+    index: number;
     onClick: () => void;
 }
 
@@ -34,7 +35,7 @@ const RoleBadgeGroup: React.FC<{ roles: string[] }> = ({ roles }) => {
     );
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
     const previewLength: number = 100;
     const ellipsis: string = "...";
     let desc = project.description;
@@ -45,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
     }
 
     return (
-        <div className="card" onClick={onClick}>
+        <div key={index} className="card" onClick={onClick} style={{animationDelay: `${index * 0.1}s`}}>
             <h3 className='title'> 
                 {project.title || "Untitled entry"} 
                 <span className='date'> {project.date.replace('-', ' ')} </span>

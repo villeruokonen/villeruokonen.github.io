@@ -25,8 +25,6 @@ const ProjectList: React.FC = () => {
         loadProjects();
     }, []);
 
-    
-
     if (loading) {
         return <h1>Loading...</h1>
     }
@@ -40,11 +38,12 @@ const ProjectList: React.FC = () => {
                     .sort((a, b) => 
                         new Date(b.date).getTime() - new Date(a.date).getTime()
                     )
-                    .map((p) => (
+                    .map((p, index) => (
                         <ProjectCard
                             project={p}
-                            onClick={() => openModal(p)}>
-                        </ProjectCard>
+                            index={index}
+                            onClick={() => openModal(p)}/>
+                    
                 ))}
             </div>
         </div>
