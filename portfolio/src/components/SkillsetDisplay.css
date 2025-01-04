@@ -1,11 +1,17 @@
 .skill-container {
     padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .skill-badges {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+    width: 33%;
     align-items: center;
-    display: inline-flex;
+    justify-content: center;
     gap: 8px;
-    width: 100%;
 }
