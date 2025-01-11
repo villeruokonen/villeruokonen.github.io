@@ -12,12 +12,7 @@
             "Lead Programmer",
             "Audio Director"
         ],
-        "links": [
-            {
-                "url": "",
-                "title": ""
-            }
-        ]
+        "links": []
     },
     {
         "id": 1,
@@ -51,12 +46,7 @@
             "React",
             "TypeScript"
         ],
-        "links": [
-            {
-                "url": "",
-                "title": ""
-            }
-        ]
+        "links": []
     },
     {
         "id": 3,

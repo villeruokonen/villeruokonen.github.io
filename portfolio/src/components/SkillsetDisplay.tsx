@@ -9,12 +9,14 @@ const SkillsetDisplay: React.FC = () => {
     const loadSkills = async () => {
         const projects = await getProjects();
 
-        const skills = projects
-            .flatMap(project => project.technologies)
-            .filter((tech, index, self) => self.indexOf(tech) === index)
-            .sort((a, b) => a.localeCompare(b))
+        if (projects) {
+            const skills = projects
+                .flatMap(project => project.technologies)
+                .filter((tech, index, self) => self.indexOf(tech) === index)
+                .sort((a, b) => a.localeCompare(b))
 
-        setSkills(skills);
+            setSkills(skills);
+        }
     }
 
     useEffect(() => {
