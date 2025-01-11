@@ -3,6 +3,14 @@ import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope, FaSpotify } from 'react-ic
 import './Header.css';
 
 const Header: React.FC = () => {
+    const buildEmail = (): string  => {
+        const user = "ruokonen";
+        const domain = "v@gmail";
+        const dotcom = ".com";
+
+        return user + domain + dotcom;
+    }
+
     return (
         <header>
             <h1>Ville Ruokonen</h1>
@@ -29,9 +37,9 @@ const Header: React.FC = () => {
                         </a>
                     </li>
                     <li className='socials-item'>
-                    <a href="mailto:ruokonenv@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <FaEnvelope size={30} />
-                        </a>
+                    <a href={`mailto:${buildEmail()}`} target="_blank" rel="noopener noreferrer">
+                        <FaEnvelope size={30} />
+                    </a>
                     </li>
                 </ul>
             </nav>
