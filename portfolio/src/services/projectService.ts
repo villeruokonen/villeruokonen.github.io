@@ -1,10 +1,10 @@
 import { Projects } from '../models/Projects';
 import { validateProjects } from '../utils/validateProjects';
+import projectJson from '../projects.json';
 
 export const getProjects = async (): Promise<Projects | null> => {
     try {
-        const projectResponse = await fetch('../src/projects.json')
-        const projects = await projectResponse.json();
+        const projects = projectJson as Projects;
         if (validateProjects(projects)) {
             return projects as Projects;
         }
