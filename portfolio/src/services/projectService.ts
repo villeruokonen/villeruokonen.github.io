@@ -5,7 +5,8 @@ import projectJson from '../projects.json';
 export const getProjects = async (): Promise<Projects | null> => {
     try {
         const projects = projectJson as Projects;
-        if (validateProjects(projects)) {
+        const valid = await validateProjects(projects);
+        if (valid) {
             return projects as Projects;
         }
         else {

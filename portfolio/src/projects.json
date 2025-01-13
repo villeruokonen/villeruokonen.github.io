@@ -164,5 +164,25 @@
                 "title": "Download CureBot on itch.io"
             }
         ]
+    },
+    {
+        "id": 9,
+        "title": "Coin Game",
+        "date": "Mar-2016",
+        "description": "One of my first ever games, from back when I started using Unity, around 2015-2016. The gimmick is that \"the coins collect you\"; you need to survive and shoot the coins.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Game Developer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://villeruo.itch.io/coin-game",
+                "title": "Download Coin Game on itch.io"
+            }
+        ]
     }
 ]
