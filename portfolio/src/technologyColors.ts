@@ -4,17 +4,13 @@ interface ColorPair {
 }
 
 const technologyColors: { [key: string]: ColorPair; } = {
-    'React': {
-        primary: '#20232A',
-        accent: '#61DAFB'
+    'Ableton Live': {
+        primary: '#000000',
+        accent: '#FF5E00'
     },
-    'TypeScript': {
-        primary: '#007ACC',
-        accent: '#FFFFFF'
-    },
-    'JavaScript': {
-        primary: '#F7DF1E',
-        accent: '#000000'
+    'Blender': {
+        primary: '#F5792A',
+        accent: '#222222'
     },
     'C#': {
         primary: '#68217A',
@@ -24,8 +20,36 @@ const technologyColors: { [key: string]: ColorPair; } = {
         primary: '#00599C',
         accent: '#FFFFFF'
     },
+    'GDScript': {
+        primary: '#355570',
+        accent: '#FFFFFF'
+    },
+    'Godot': {
+        primary: '#478CBF',
+        accent: '#FFFFFF'
+    },
+    'JavaScript': {
+        primary: '#F7DF1E',
+        accent: '#000000'
+    },
     'NodeJS': {
         primary: '#68A063',
+        accent: '#FFFFFF'
+    },
+    'OpenGL': {
+        primary: '#5586A4',
+        accent: '#FFFFFF'
+    },
+    'Photoshop': {
+        primary: '#001E36',
+        accent: '#31A8FF'
+    },
+    'React': {
+        primary: '#20232A',
+        accent: '#61DAFB'
+    },
+    'TypeScript': {
+        primary: '#007ACC',
         accent: '#FFFFFF'
     },
     'Unity': {
@@ -34,18 +58,6 @@ const technologyColors: { [key: string]: ColorPair; } = {
     },
     'Unreal': {
         primary: '#0E1128',
-        accent: '#FFFFFF'
-    },
-    'Godot': {
-        primary: '#478CBF',
-        accent: '#FFFFFF'
-    },
-    'GDScript': {
-        primary: '#355570',
-        accent: '#FFFFFF'
-    },
-    'OpenGL': {
-        primary: '#5586A4',
         accent: '#FFFFFF'
     }
 };
