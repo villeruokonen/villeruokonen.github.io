@@ -1,4 +1,5 @@
 import { NamedLink } from "../models/NamedLink";
+import './ModalLinkDisplay.css'
 
 interface ModalLinkDisplayProps {
     links: NamedLink[];
@@ -9,7 +10,7 @@ function Link(link: NamedLink): JSX.Element {
         return (<></>);
 
     return (
-        <a href={link.url} target="_blank" rel="noopener noreferrer">
+        <a className="link" href={link.url} target="_blank" rel="noopener noreferrer">
             {link.title}
         </a>
     );
