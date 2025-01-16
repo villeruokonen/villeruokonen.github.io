@@ -184,5 +184,25 @@
                 "title": "Download Coin Game on itch.io"
             }
         ]
+    },
+    {
+        "id": 10,
+        "title": "Hissipoika Simulator",
+        "date": "Jan-2025",
+        "description": "Queer Winter Game Jam 2024-25. Take on the role of the best Hissipoika in Finland and manage the ski lifts. For most of us in the team, including me, this was our first time using Godot. I was mostly in charge of making the sounds and music, but I helped with programming.",
+        "technologies": [
+            "GDScript",
+            "Godot"
+        ],
+        "roles": [
+            "Game Developer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://giacomo-trenna.itch.io/hissipoika-simulator",
+                "title": "Download Hissipoika Simulator on itch.io"
+            }
+        ]
     }
 ]
