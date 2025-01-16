@@ -1,10 +1,10 @@
-import { technologyColors, technologyAccentColors } from "../technologyColors";
+import { technologyColors } from "../technologyColors";
 
 export const getTechnologyAccentColor = (key: string) : string => 
 {
-    return technologyAccentColors[key] || '#FFFFFF';
+    return technologyColors[key].accent || '#FFFFFF';
 }
 
 export const getTechnologyColor = (key: string): string => {
-    return technologyColors[key] || '#000000';
+    return technologyColors[key].primary || '#000000';
 }
