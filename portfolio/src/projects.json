@@ -204,5 +204,25 @@
                 "title": "Download Hissipoika Simulator on itch.io"
             }
         ]
+    },
+    {
+        "id": 11,
+        "title": "Bubbling Thoughts",
+        "date": "Jan-2025",
+        "description": "Finnish Game Jam as part of Global Game Jam 2025. You manage trauma by finding positive thoughts among the bad ones. I was in charge of designing the screen system and making the background music.",
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Programmer",
+            "Composer"
+        ],
+        "links": [
+            {
+                "url": "https://villeruo.itch.io/bubbling-thoughts",
+                "title": "Play Bubbling Thoughts on itch.io"
+            }
+        ]
     }
 ]
