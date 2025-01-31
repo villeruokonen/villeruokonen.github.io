@@ -16,6 +16,9 @@
             "description": {
                 "type": "string"
             },
+            "image": {
+                "type": "string"
+            },
             "technologies": {
                 "type": "array",
                 "items": {

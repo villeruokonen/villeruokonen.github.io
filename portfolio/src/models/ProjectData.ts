@@ -5,6 +5,7 @@ export default interface ProjectData {
     title: string;
     date: string; // Format Mon-Year
     description: string;
+    image: string | null;
     technologies: string[];
     roles: string[];
     links: NamedLink[];
