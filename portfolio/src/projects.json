@@ -4,6 +4,7 @@
         "title": "Slug Wars",
         "date": "Jan-2025",
         "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure. The game will be released on Steam in Q1 2025.",
+        "image": "/public/images/Slug Wars/SlugFight.gif",
         "technologies": [
             "C#",
             "Unity"
