@@ -35,28 +35,50 @@ const RoleBadgeGroup: React.FC<{ roles: string[] }> = ({ roles }) => {
     );
 }
 
+const Preview: React.FC<{ image: string | null, description: string }> = ({ image, description }) => {
+    if (image && image.length > 0) {
+        return (
+            <div className='preview'>
+                <div className='thumbnail'>
+                    <div className='thumbnail-content'>
+                        <div className='thumbnail-underlay-gradient'></div>
+                        <img src={image}></img>
+                        <p> {description} </p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    else {
+        return (
+            <div className='preview'>
+                <p> {description} </p>
+            </div>
+        );
+    }
+}
+
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
-    const previewLength: number = 100;
+    const previewLength: number = 140;
     const ellipsis: string = "...";
-    let desc = project.description;
-    
-    if (desc.length > previewLength)
-    {
-        desc = project.description.slice(0, previewLength - ellipsis.length).trimEnd() + ellipsis;
+    let previewDesc = project.description;
+
+    if (previewDesc.length > previewLength) {
+        previewDesc = project.description.slice(0, previewLength - ellipsis.length).trimEnd() + ellipsis;
     }
 
     return (
-        <div key={index} className="card" onClick={onClick} style={{animationDelay: `${index * 0.1}s`}}>
-            <h3 className='title'> 
-                {project.title || "Untitled entry"} 
+        <div key={index} className="card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
+            <h3 className='title'>
+                {project.title || "Untitled entry"}
                 <span className='date'> {project.date.replace('-', ' ')} </span>
             </h3>
-            
-            <p className='description'> {desc || "Read more...."} </p>
+
+            <Preview image={project.image} description={previewDesc} />
 
             <span className='badges'>
                 <TechnologyBadgeGroup technologies={project.technologies} />
-                <RoleBadgeGroup roles={project.roles}/>
+                <RoleBadgeGroup roles={project.roles} />
             </span>
         </div>
     );
