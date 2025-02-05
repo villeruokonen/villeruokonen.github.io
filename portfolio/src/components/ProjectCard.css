@@ -40,7 +40,8 @@
 .thumbnail-content p {
     position: absolute;
     padding-left: 12px;
-    width: 80%;
+    padding-right: 12px;
+    width: auto;
     bottom: 4px;
 }
 
