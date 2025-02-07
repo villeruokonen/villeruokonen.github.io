@@ -59,7 +59,7 @@ const Preview: React.FC<{ image: string | null, description: string }> = ({ imag
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
-    const previewLength: number = 140;
+    const previewLength: number = 180;
     const ellipsis: string = "...";
     let previewDesc = project.description;
 
