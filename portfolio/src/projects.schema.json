@@ -49,6 +49,12 @@
                     ],
                     "additionalProperties": false
                 }
+            },
+            "platforms": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
             }
         },
         "required": [

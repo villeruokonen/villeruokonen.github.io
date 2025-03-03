@@ -9,7 +9,7 @@ const RoleBadge = (props: RoleBadgeProps): JSX.Element => {
         return (<></>);
 
     return (
-        <span key={props.title} className="role-badge">
+        <span className="role-badge">
             {props.title}
         </span>
     )

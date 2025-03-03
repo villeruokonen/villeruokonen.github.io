@@ -6,9 +6,7 @@
 }
 
 .skill-badges {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    display: inline-flex;
     margin: 0 auto;
     width: 33%;
     align-items: center;

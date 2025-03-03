@@ -8,6 +8,14 @@
     animation: rise 0.5s ease-out forwards;
 }
 
+.title {
+    display: inline-flex;
+    max-height: min-content;
+    width: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+
 @keyframes rise {
     from {
         opacity: 0;

@@ -1,4 +1,4 @@
-import { NamedLink } from "./NamedLink";
+import { LabeledURL } from "./LabeledURL";
 
 export default interface ProjectData {
     id: number;
@@ -8,5 +8,6 @@ export default interface ProjectData {
     image: string | null;
     technologies: string[];
     roles: string[];
-    links: NamedLink[];
+    links: LabeledURL[];
+    platforms: string[];
 }

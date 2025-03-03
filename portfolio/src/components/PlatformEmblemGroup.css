@@ -1,0 +1,10 @@
+.emblem {
+    display: inline-block;
+    justify-content: center;
+}
+
+.emblems {
+    display: inline-block;
+    padding-left: 8px;
+    line-height: 0.8;
+}

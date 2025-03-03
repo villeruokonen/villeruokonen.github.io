@@ -1,11 +1,11 @@
-import { NamedLink } from "../models/NamedLink";
+import { LabeledURL } from "../models/LabeledURL";
 import './ModalLinkDisplay.css'
 
 interface ModalLinkDisplayProps {
-    links: NamedLink[];
+    links: LabeledURL[];
 }
 
-function Link(link: NamedLink): JSX.Element {
+function Link(link: LabeledURL): JSX.Element {
     if (!link.url)
         return (<></>);
 

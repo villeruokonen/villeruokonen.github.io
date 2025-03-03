@@ -52,6 +52,7 @@ const ProjectList: React.FC = () => {
                     )
                     .map((p, index) => (
                         <ProjectCard
+                            key={index}
                             project={p}
                             index={index}
                             onClick={() => openModal(p)} />

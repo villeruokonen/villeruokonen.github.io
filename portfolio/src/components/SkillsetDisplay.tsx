@@ -10,12 +10,16 @@ const SkillsetDisplay: React.FC = () => {
         const projects = await getProjects();
 
         if (projects) {
-            const skills = projects
-                .flatMap(project => project.technologies)
-                .filter((tech, index, self) => self.indexOf(tech) === index)
-                .sort((a, b) => a.localeCompare(b))
+            const allTechnologies: string[] = projects.flatMap(project => project.technologies);
 
-            setSkills(skills);
+            const techCount: Record<string, number> = allTechnologies.reduce((acc, tech) => {
+                acc[tech] = (acc[tech] || 0) + 1;
+                return acc;
+            }, {} as Record<string, number>);
+
+            const sortedSkills: string[] = Object.keys(techCount).sort((a, b) => techCount[b] - techCount[a]);
+
+            setSkills(sortedSkills);
         }
     }
 
@@ -28,7 +32,7 @@ const SkillsetDisplay: React.FC = () => {
             <h2>Current skills</h2>
             <span className="skill-badges">
                 {skills.map(s => (
-                    <TechnologyBadge technologyName={s} />
+                    <TechnologyBadge key={s} technologyName={s} />
                 ))}
             </span>
         </div>
