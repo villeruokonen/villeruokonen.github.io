@@ -3,7 +3,7 @@ import { LabeledURL } from "./LabeledURL";
 export default interface ProjectData {
     id: number;
     title: string;
-    date: string; // Format Mon-Year
+    date: string;
     description: string;
     image: string | null;
     technologies: string[];

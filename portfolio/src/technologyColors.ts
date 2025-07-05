@@ -8,6 +8,10 @@ const technologyColors: { [key: string]: ColorPair; } = {
         primary: '#000000',
         accent: '#FF5E00'
     },
+    'ASP.NET': {
+        primary: '#68217A',
+        accent: '#FFFFFF'
+    },
     'Blender': {
         primary: '#F5792A',
         accent: '#222222'

@@ -7,7 +7,8 @@ export const getProjects = async (): Promise<Projects | null> => {
         const projects = projectJson as Projects;
         const valid = await validateProjects(projects);
         if (valid) {
-            return projects as Projects;
+            return (projects as Projects).sort((a, b) =>
+                new Date(a.date).getTime() - new Date(b.date).getTime())
         }
         else {
             console.error("Invalid projects data");

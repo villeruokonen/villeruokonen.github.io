@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
             <h3 className='title'>
                 {project.title || "Untitled entry"}
                 <PlatformEmblemGroup platforms={project.platforms} />
-                <span className='date'> {project.date.replace('-', ' ')} </span>
+                <span className='date'> {new Date(project.date).getFullYear()} </span>
             </h3>
 
             <p className='description'> {desc || "Read more...."} </p>

@@ -2,9 +2,11 @@ import { technologyColors } from "../technologyColors";
 
 export const getTechnologyAccentColor = (key: string) : string => 
 {
-    return technologyColors[key].accent || '#FFFFFF';
+    if (key === null) return '#000000';
+    return technologyColors[key]?.accent || '#FFFFFF';
 }
 
 export const getTechnologyColor = (key: string): string => {
-    return technologyColors[key].primary || '#000000';
+    if (key === null) return '#000000';
+    return technologyColors[key]?.primary || '#000000';
 }
