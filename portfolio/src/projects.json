@@ -276,7 +276,7 @@
         "id": 12,
         "title": "HecticHotel",
         "date": "2025-07",
-        "description": "HecticHotel is a recreation of a popular Hotel-based chatroom / hangout platform. The Unity WebGL client runs in the browser, and the backend is ASP.NET-based. As part of my \"sysadmin\" learning, I set up my own web server to serve the WebGL app and to host the backend in a Docker container.",
+        "description": "HecticHotel is a recreation of the previously popular chatroom / hangout platform, Habbo Hotel. The Unity WebGL client runs in the browser, and the backend is ASP.NET-based. As part of my \"sysadmin\" learning, I set up my own Linux server to serve the WebGL app and to host the backend in a Docker container.",
         "technologies": [
             "C#",
             "ASP.NET",
