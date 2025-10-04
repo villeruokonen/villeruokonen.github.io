@@ -1,0 +1,50 @@
+
+[
+    {
+        "name": "Unity",
+        "category": "Game Dev"
+    },
+    {
+        "name": "Unreal",
+        "category": "Game Dev"
+    },
+    {
+        "name": "Godot",
+        "category": "Game Dev"
+    },
+
+    {
+        "name": "React",
+        "category": "Web"
+    },
+    {
+        "name": "ASP.NET",
+        "category": "Web"
+    },
+
+    {
+        "name": "C#",
+        "category": "Languages"
+    },
+    {
+        "name": "C++",
+        "category": "Languages"
+    },
+    {
+        "name": "TS",
+        "category": "Languages"
+    },
+    {
+        "name": "JS",
+        "category": "Languages"
+    },
+
+    {
+        "name": "nginx",
+        "category": "DevOps"
+    },
+    {
+        "name": "Docker",
+        "category": "DevOps"
+    }
+]

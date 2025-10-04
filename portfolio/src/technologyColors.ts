@@ -5,8 +5,8 @@ interface ColorPair {
 
 const technologyColors: { [key: string]: ColorPair; } = {
     'Ableton Live': {
-        primary: '#000000',
-        accent: '#FF5E00'
+        primary: '#454545ff',
+        accent: '#e4dadcff '
     },
     'ASP.NET': {
         primary: '#68217A',
@@ -24,6 +24,10 @@ const technologyColors: { [key: string]: ColorPair; } = {
         primary: '#00599C',
         accent: '#FFFFFF'
     },
+    'Docker': {
+        primary: '#1D63ED',
+        accent: '#E5F2FC'
+    },
     'GDScript': {
         primary: '#355570',
         accent: '#FFFFFF'
@@ -32,9 +36,13 @@ const technologyColors: { [key: string]: ColorPair; } = {
         primary: '#478CBF',
         accent: '#FFFFFF'
     },
-    'JavaScript': {
+    'JS': {
         primary: '#F7DF1E',
         accent: '#000000'
+    },
+    'nginx': {
+        primary: '#009639',
+        accent: '#FFFFFF'
     },
     'NodeJS': {
         primary: '#68A063',
@@ -52,7 +60,7 @@ const technologyColors: { [key: string]: ColorPair; } = {
         primary: '#20232A',
         accent: '#61DAFB'
     },
-    'TypeScript': {
+    'TS': {
         primary: '#007ACC',
         accent: '#FFFFFF'
     },

@@ -1,6 +1,8 @@
 import { Projects } from '../models/Projects';
 import { validateProjects } from '../utils/validateProjects';
 import projectJson from '../projects.json';
+import skillJson from '../skills.json'
+import Skill from '../models/Skill';
 
 export const getProjects = async (): Promise<Projects | null> => {
     try {
@@ -18,5 +20,17 @@ export const getProjects = async (): Promise<Projects | null> => {
     catch (err) {
         console.error("Failed to fetch projects: " + err);
         return null;
+    }
+}
+
+export const getSkills = async() : Promise<Skill[]> => {
+    try
+    {
+        const skills = skillJson as Skill[];
+        return skills;
+    }
+    catch (err) {
+        console.error("Failed to fetch projects: " + err);
+        return [];
     }
 }

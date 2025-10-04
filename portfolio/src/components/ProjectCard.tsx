@@ -1,8 +1,8 @@
 import ProjectData from '../models/ProjectData';
 import { PlatformEmblemGroup } from './PlatformEmblemGroup';
-import { RoleBadgeGroup } from './RoleBadgeGroup';
-import { TechnologyBadgeGroup } from './TechnologyBadgeGroup';
 import './ProjectCard.css'
+import RoleBadge from './RoleBadge';
+import TechnologyBadge from './TechnologyBadge';
 
 interface ProjectCardProps {
     project: ProjectData;
@@ -30,8 +30,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
             <p className='description'> {desc || "Read more...."} </p>
 
             <span className='badges'>
-                <TechnologyBadgeGroup technologies={project.technologies} />
-                <RoleBadgeGroup roles={project.roles} />
+                <span className='badges-technologies'>
+                    {project.technologies.map(t => (
+                        <TechnologyBadge technologyName={t} key={t}/>
+                    ))}
+                </span>
+                <span className='badges-roles'>
+                    {project.roles.map(r => (
+                        <RoleBadge title={r} key={r} />
+                    ))}
+                </span>
             </span>
         </div>
     );

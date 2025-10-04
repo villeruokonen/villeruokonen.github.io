@@ -2,6 +2,14 @@ header {
     align-content: center;
 }
 
+h1 {
+    padding: 0;
+}
+
+.logo {
+    max-width: 15%;
+}
+
 .socials-list {
     list-style-type: none;
     display: flex;

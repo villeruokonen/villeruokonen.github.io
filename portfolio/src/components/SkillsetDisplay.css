@@ -1,15 +1,38 @@
 .skill-container {
-    padding-bottom: 10px;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
 }
 
-.skill-badges {
-    display: inline-flex;
-    margin: 0 auto;
-    width: 33%;
-    align-items: center;
+.skill-categories {
+    display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    padding: 20px;
+    background-color: rgba(66, 69, 70, 0.4);
+    border-radius: 8px;
+    text-align: left;
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+.skill-category h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.badges-technologies {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
 }

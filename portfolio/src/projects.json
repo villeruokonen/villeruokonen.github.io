@@ -7,7 +7,8 @@
         "image": "/images/Slug Wars/SlugFight.gif",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Lead Programmer",
@@ -56,7 +57,7 @@
         ],
         "technologies": [
             "React",
-            "TypeScript"
+            "TS"
         ],
         "platforms": [
             "github"
@@ -72,7 +73,7 @@
         "id": 3,
         "title": "BrickWorld",
         "date": "2022-12",
-        "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to do it with trial and error. I also learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally, one of my first forays into multiplayer and netcode as well.",
+        "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to recreate it through trial and error. I learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally also one of my first forays into multiplayer and netcode",
         "technologies": [
             "C#",
             "Unity"
@@ -119,7 +120,8 @@
         "description": "Global Game Jam 2024. You must make the king laugh by completing fast-paced minigames. I was in charge of designing and implementing the minigame system for our other programmers to use, using careful scene management",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Lead Programmer",
@@ -139,10 +141,11 @@
         "id": 6,
         "title": "Halloween Madness",
         "date": "2024-11",
-        "description": "BitJam 2024. Protect your yard from incoming monsters. I was in charge of doing technical design and implementation of the buying-placing system for the traps.",
+        "description": "BitJam 2024. Protect your yard from incoming monsters. I was in charge of sounds and music as well as doing technical design and implementation of the buying-placing system for the traps.",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Lead Programmer",
@@ -187,7 +190,8 @@
         "description": "EXPA Game Jam 2023. You play as a delivery robot, transporting the cure. I was in charge of implementing the movement and physics of the robot, as well as composing the background music.",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Programmer",
@@ -210,7 +214,8 @@
         "description": "One of my first ever games, from back when I started using Unity, around 2015-2016. The gimmick is that \"the coins collect you\"; you need to survive and shoot the coins.",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Game Developer",
@@ -232,6 +237,7 @@
         "date": "2025-01",
         "description": "Queer Winter Game Jam 2024-25. Take on the role of the best Hissipoika in Finland and manage the ski lifts. For most of us in the team, including me, this was our first time using Godot. I was mostly in charge of making the sounds and music, but I helped with programming.",
         "technologies": [
+            "Ableton Live",
             "GDScript",
             "Godot"
         ],
@@ -256,7 +262,8 @@
         "description": "Finnish Game Jam as part of Global Game Jam 2025. You manage trauma by finding positive thoughts among the bad ones. I was in charge of designing the screen system and making the background music.",
         "technologies": [
             "C#",
-            "Unity"
+            "Unity",
+            "Ableton Live"
         ],
         "roles": [
             "Programmer",
@@ -277,6 +284,7 @@
         "title": "HecticHotel",
         "date": "2025-07",
         "description": "HecticHotel is a recreation of the previously popular chatroom / hangout platform, Habbo Hotel. The Unity WebGL client runs in the browser, and the backend is ASP.NET-based. As part of my \"sysadmin\" learning, I set up my own Linux server to serve the WebGL app and to host the backend in a Docker container.",
+        "image": "/images/HecticHotel/hectic_cafe.png",
         "technologies": [
             "C#",
             "ASP.NET",

@@ -3,7 +3,7 @@
     border-radius: 8px;
     color: white;
     font-size: 0.875rem;
-    white-space: nowrap;
     font-weight: bold;
     display: inline-block;
+    text-wrap: nowrap;
 }

@@ -8,11 +8,12 @@ function App() {
   return (
     <>
       <Header />
-      <SkillsetDisplay />
       <main>
+        <h2>My skills</h2>
+        <SkillsetDisplay />
         <h2>Stuff I've done</h2>
         <ProjectList />
-      </main>
+            </main>
       <Footer />
     </>
   )

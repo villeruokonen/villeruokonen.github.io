@@ -1,40 +1,46 @@
-import TechnologyBadge from "./TechnologyBadge";
-import { getProjects } from "../services/projectService";
+import Skill from "../models/Skill";
+import { getSkills } from "../services/projectService";
 import { useEffect, useState } from "react";
+import TechnologyBadge from "./TechnologyBadge";
 import './SkillsetDisplay.css'
 
 const SkillsetDisplay: React.FC = () => {
-    const [skills, setSkills] = useState<string[]>([]);
+    const [skills, setSkills] = useState<Skill[]>([]);
 
     const loadSkills = async () => {
-        const projects = await getProjects();
+        const skills = await getSkills();
 
-        if (projects) {
-            const allTechnologies: string[] = projects.flatMap(project => project.technologies);
-
-            const techCount: Record<string, number> = allTechnologies.reduce((acc, tech) => {
-                acc[tech] = (acc[tech] || 0) + 1;
-                return acc;
-            }, {} as Record<string, number>);
-
-            const sortedSkills: string[] = Object.keys(techCount).sort((a, b) => techCount[b] - techCount[a]);
-
-            setSkills(sortedSkills);
-        }
+        setSkills(skills);
     }
 
     useEffect(() => {
         loadSkills();
     }, []);
 
+    const categorized = skills.reduce<Record<string, Skill[]>>((acc, skill) => {
+        if (!acc[skill.category]) {
+            acc[skill.category] = [];
+        }
+        acc[skill.category].push(skill);
+        return acc;
+    }, {});
+
     return (
-        <div className="skill-container">
-            <h2>Current skills</h2>
-            <span className="skill-badges">
-                {skills.map(s => (
-                    <TechnologyBadge key={s} technologyName={s} />
-                ))}
-            </span>
+        <div >
+            <div className="skill-container">
+                <div className="skill-categories">
+                    {Object.entries(categorized).map(([category, skillsInCategory]) => (
+                        <div key={category} className="skill-category">
+                            <h4>{category}</h4>
+                            <div className='badges-technologies'>
+                                {skillsInCategory.map((tech) => (
+                                    <TechnologyBadge technologyName={tech.name} key={tech.name} />
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
