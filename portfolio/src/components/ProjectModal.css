@@ -62,5 +62,10 @@ body.modal-open {
   .modal-content {
     max-width: 100%;
     font-size: 4vh;
+    backdrop-filter: saturate(180%);
+  }
+
+  .modal-overlay {
+    backdrop-filter: saturate(180%);
   }
 }

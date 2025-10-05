@@ -35,3 +35,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+    .skill-category {
+        background-color: rgba(66, 69, 70, 0.7);
+        backdrop-filter: saturate(180%);
+    }
+}

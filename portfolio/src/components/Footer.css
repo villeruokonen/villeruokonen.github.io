@@ -25,16 +25,26 @@ footer {
     padding-top: 16px;
     padding-bottom: 8px;
     height: 32px;
-}
-
-.copyright {
-    font-weight: bold;
-}
-
-.update-date {
     font-size: small;
 }
 
-.views {
-    font-size: small;
+@media (max-width: 600px) {
+    footer::before {
+        -webkit-backdrop-filter: none;
+        mask-image: none;
+        backdrop-filter: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    footer {
+        height: max-content;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .footer-contents {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 3vh;
+        height: 72px;
+    }
 }
