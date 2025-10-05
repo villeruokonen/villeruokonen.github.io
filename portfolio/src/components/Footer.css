@@ -1,15 +1,10 @@
 footer {
     position: static;
     color: #e4e4e4;
-    font-family:Arial, Helvetica, sans-serif;
     line-height: 1;
     text-align: center;
 }
 
 .copyright {
     font-weight: bold;
-}
-
-.update-date {
-    font-size: 80%;
 }

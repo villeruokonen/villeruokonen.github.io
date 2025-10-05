@@ -3,11 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family:Arial, Helvetica, sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+    font-size: 3vh;
   }
 }

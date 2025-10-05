@@ -1,19 +1,15 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-family: "sitefont", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-image: url('/background.png');
   background-color: #212223;
+  background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-position: center;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -21,6 +17,7 @@ a {
   color: #6473ff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #afc0eb;
 }
@@ -49,23 +46,23 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (max-width: 600px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    background-attachment: scroll;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+@font-face {
+  font-family: "sitefont";
+  src: url("/fonts/SourceCodePro.ttf");
 }

@@ -27,19 +27,17 @@ const SkillsetDisplay: React.FC = () => {
 
     return (
         <div >
-            <div className="skill-container">
-                <div className="skill-categories">
-                    {Object.entries(categorized).map(([category, skillsInCategory]) => (
-                        <div key={category} className="skill-category">
-                            <h4>{category}</h4>
-                            <div className='badges-technologies'>
-                                {skillsInCategory.map((tech) => (
-                                    <TechnologyBadge technologyName={tech.name} key={tech.name} />
-                                ))}
-                            </div>
+            <div className="skill-categories">
+                {Object.entries(categorized).map(([category, skillsInCategory]) => (
+                    <div key={category} className="skill-category">
+                        <h4>{category}</h4>
+                        <div className='badges-technologies'>
+                            {skillsInCategory.map((tech) => (
+                                <TechnologyBadge technologyName={tech.name} key={tech.name} />
+                            ))}
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

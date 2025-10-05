@@ -22,3 +22,9 @@ h1 {
 .socials-item {
     margin: 0 16px;
 }
+
+@media (max-width: 600px) {
+    .socials-list {
+        font-size: 5vh;
+    }
+}
