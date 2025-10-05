@@ -1,3 +1,4 @@
+import React from 'react';
 import Skill from '../models/Skill';
 import { getSkills } from '../services/projectService';
 import { useEffect, useState } from 'react';
@@ -43,4 +44,4 @@ const SkillsetDisplay: React.FC = () => {
     );
 }
 
-export default SkillsetDisplay;
+export default React.memo(SkillsetDisplay);

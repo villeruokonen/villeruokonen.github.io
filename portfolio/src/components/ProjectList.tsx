@@ -1,5 +1,5 @@
 import './ProjectList.css'
-import React from 'react'
+import React, { useCallback } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectData from '../models/ProjectData'
 import { useEffect, useState } from 'react'
@@ -12,8 +12,8 @@ const ProjectList: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>();
 
-    const openModal = (project: ProjectData) => setSelectedProject(project);
-    const closeModal = () => setSelectedProject(null);
+    const openModal = useCallback((project: ProjectData) => setSelectedProject(project), []);
+    const closeModal = useCallback(() => setSelectedProject(null), []);
 
     useEffect(() => {
         const loadProjects = async () => {

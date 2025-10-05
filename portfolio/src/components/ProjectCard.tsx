@@ -1,3 +1,4 @@
+import React from 'react';
 import ProjectData from '../models/ProjectData';
 import { PlatformEmblemGroup } from './PlatformEmblemGroup';
 import './ProjectCard.css'
@@ -11,7 +12,17 @@ interface ProjectCardProps {
 }
 
 const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
-    src ? <div className="thumbnail-cutoff"><img className="thumbnail" src={src} alt="Project thumbnail" /></div> : null
+    src ? (
+        <div className="thumbnail-cutoff">
+            <img 
+                className="thumbnail" 
+                src={src} 
+                alt="Project thumbnail"
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+    ) : null
 );
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
@@ -53,4 +64,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
     );
 }
 
-export default ProjectCard;
+export default React.memo(ProjectCard);

@@ -11,7 +11,12 @@ export const ModalImage: React.FC<ModalImageProps> = (props) => {
 
     return (
         <div className="image-container">
-            <img src={props.paths[0]} />
+            <img 
+                src={props.paths[0]} 
+                loading="lazy"
+                decoding="async"
+                alt="Project image"
+            />
         </div>
     );
 };

@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaX } from 'react-icons/fa6';
 import ProjectData from '../models/ProjectData';
 import './ProjectModal.css'
@@ -28,4 +29,4 @@ const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
     );
 };
 
-export default ProjectModal;
+export default React.memo(ProjectModal);

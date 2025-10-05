@@ -6,6 +6,8 @@
     text-align: left;
     opacity: 0;
     animation: rise 0.5s ease-out forwards;
+    contain: layout style paint;
+    will-change: transform, opacity;
 }
 
 .title {
@@ -95,6 +97,19 @@
     .card {
         font-size: 3.2vh;
         background-color: rgba(66, 69, 70, 0.7);
-        backdrop-filter: saturate(180%);
+        backdrop-filter: none;
+        will-change: transform, opacity;
+    }
+
+    .card:hover {
+        transition: background-color 0.1s ease-in-out;
+        background-color: rgba(45, 47, 47, 0.8);
+    }
+
+    .thumbnail {
+        image-rendering: auto;
+        height: auto;
+        max-height: 192px;
+        object-fit: cover;
     }
 }

@@ -19,6 +19,7 @@ main {
 @font-face {
   font-family: "blurb";
   src: url("/fonts/MPLUSCode.ttf");
+  font-display: swap;
 }
 
 @media (max-width: 600px) {

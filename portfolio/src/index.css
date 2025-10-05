@@ -4,12 +4,23 @@
   font-family: "sitefont", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url('/background.png');
   background-color: #212223;
-  background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-position: center;
+}
+
+@media (min-width: 768px) {
+  :root {
+    background-image: url('/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    background: linear-gradient(135deg, #1a1b1c 0%, #2a2b2c 100%);
+  }
 }
 
 a {
