@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    place-items: center;
+    align-self: center;
 }
 
 @media (max-width: 768px) {

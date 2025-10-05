@@ -5,4 +5,11 @@
     font-weight: bold;
     display: inline-block;
     text-wrap: nowrap;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+    .technology-badge {
+        font-size: inherit;
+    }
 }

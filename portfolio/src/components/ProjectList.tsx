@@ -42,7 +42,7 @@ const ProjectList: React.FC = () => {
     }
 
     return (
-        <div>
+        <>
             <ProjectModal project={selectedProject} onClose={closeModal} />
             <div className="project-list">
                 {projects.map((p, index) => (
@@ -54,7 +54,7 @@ const ProjectList: React.FC = () => {
 
                 ))}
             </div>
-        </div>
+        </>
     );
 }
 
