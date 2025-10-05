@@ -10,6 +10,10 @@ interface ProjectCardProps {
     onClick: () => void;
 }
 
+const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
+    src ? <div className="thumbnail-cutoff"><img className="thumbnail" src={src} alt="Project thumbnail" /></div> : null
+);
+
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
     const previewLength: number = 100;
     const ellipsis: string = "...";
@@ -27,18 +31,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
                 <span className='date'> {new Date(project.date).getFullYear()} </span>
             </h3>
 
+            {project.images?.[0] && <Thumbnail src={project.images[0]} />}
+
             <p className='description'> {desc || "Read more...."} </p>
 
-            <span className='badges'>
-                <span className='badges-technologies'>
-                    {project.technologies.map(t => (
-                        <TechnologyBadge technologyName={t} key={t}/>
-                    ))}
-                </span>
-                <span className='badges-roles'>
-                    {project.roles.map(r => (
-                        <RoleBadge title={r} key={r} />
-                    ))}
+            <span className="badges-container">
+                <span className='badges'>
+                    <span className='badges-technologies'>
+                        {project.technologies.map(t => (
+                            <TechnologyBadge technologyName={t} key={t} />
+                        ))}
+                    </span>
+                    <span className='badges-roles'>
+                        {project.roles.map(r => (
+                            <RoleBadge title={r} key={r} />
+                        ))}
+                    </span>
                 </span>
             </span>
         </div>

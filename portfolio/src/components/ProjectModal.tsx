@@ -18,7 +18,7 @@ const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <h2>{project.title}</h2>
-                <ModalImage url={project.image}></ModalImage>
+                <ModalImage paths={project.images}></ModalImage>
                 <p>{project.description}</p>
                 <ModalLinkDisplay links={project.links} />
                 <button className="modal-close" onClick={onClose}>

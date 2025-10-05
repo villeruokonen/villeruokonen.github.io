@@ -4,7 +4,9 @@
         "title": "Slug Wars",
         "date": "2025-02",
         "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure. The game will be released on Steam in Q1 2025.",
-        "image": "/images/Slug Wars/SlugFight.gif",
+        "images": [
+            "/images/SlugWars/slug_wars01.gif"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -29,6 +31,9 @@
         "title": "OpenGL Game Engine",
         "date": "2024-11",
         "description": "I developed an OpenGL game engine during my studies at Jamk University of Applied Sciences, on the Game Engine Programming course. This course helped me solidify my understanding of C++ and lower-level programming.",
+        "images": [
+            "/images/OpenGLGameEngine/opengl_game_engine01.gif"
+        ],
         "technologies": [
             "C++",
             "OpenGL"
@@ -49,9 +54,12 @@
     },
     {
         "id": 2,
-        "title": "This portfolio page!",
+        "title": "This portfolio page",
         "date": "2025-01",
         "description": "The page you are on right now was created using React with TS, to both help me improve my web development skills and to show my understanding of it (and gather all my work in one space).",
+        "images": [
+            "/images/PortfolioSite/app_tsx.png"
+        ],
         "roles": [
             "Developer"
         ],
@@ -74,6 +82,9 @@
         "title": "BrickWorld",
         "date": "2022-12",
         "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to recreate it through trial and error. I learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally also one of my first forays into multiplayer and netcode",
+        "images": [
+            "/images/BrickWorld/brickworld01.png"
+        ],
         "technologies": [
             "C#",
             "Unity"
@@ -96,6 +107,9 @@
         "title": "One hour game",
         "date": "2024-12",
         "description": "A \"microgame\" created within one hour during my studies at Jamk on the Game Engine 2 course.",
+        "images": [
+            "/images/OneHourGame/one_hour_game01.png"
+        ],
         "technologies": [
             "C#",
             "Unity"
@@ -118,6 +132,9 @@
         "title": "Royal Banter",
         "date": "2024-01",
         "description": "Global Game Jam 2024. You must make the king laugh by completing fast-paced minigames. I was in charge of designing and implementing the minigame system for our other programmers to use, using careful scene management",
+        "images": [
+            "/images/RoyalBanter/royal_banter01.png"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -142,6 +159,9 @@
         "title": "Halloween Madness",
         "date": "2024-11",
         "description": "BitJam 2024. Protect your yard from incoming monsters. I was in charge of sounds and music as well as doing technical design and implementation of the buying-placing system for the traps.",
+        "images": [
+            "/images/HalloweenMadness/halloween_madness01.png"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -166,6 +186,9 @@
         "title": "Lupus Veganus",
         "date": "2024-01",
         "description": "A prototype for a survival game where you play as a vegan wolf. I was in charge of programming the enemy AI, and I implemented a simple Blueprint-extensible state machine in C++.",
+        "images": [
+            "/images/LupusVeganus/lupus_veganus01.png"
+        ],
         "technologies": [
             "C++",
             "Unreal"
@@ -188,6 +211,9 @@
         "title": "CureBot",
         "date": "2023-11",
         "description": "EXPA Game Jam 2023. You play as a delivery robot, transporting the cure. I was in charge of implementing the movement and physics of the robot, as well as composing the background music.",
+        "images": [
+            "/images/CureBot/curebot01.png"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -212,6 +238,9 @@
         "title": "Coin Game",
         "date": "2016-03",
         "description": "One of my first ever games, from back when I started using Unity, around 2015-2016. The gimmick is that \"the coins collect you\"; you need to survive and shoot the coins.",
+        "images": [
+            "/images/CoinGame/coin_game01.png"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -236,6 +265,9 @@
         "title": "Hissipoika Simulator",
         "date": "2025-01",
         "description": "Queer Winter Game Jam 2024-25. Take on the role of the best Hissipoika in Finland and manage the ski lifts. For most of us in the team, including me, this was our first time using Godot. I was mostly in charge of making the sounds and music, but I helped with programming.",
+        "images": [
+            "/images/HissipoikaSimulator/hissipoika_simulator01.png"
+        ],
         "technologies": [
             "Ableton Live",
             "GDScript",
@@ -260,6 +292,9 @@
         "title": "Bubbling Thoughts",
         "date": "2025-01",
         "description": "Finnish Game Jam as part of Global Game Jam 2025. You manage trauma by finding positive thoughts among the bad ones. I was in charge of designing the screen system and making the background music.",
+        "images": [
+            "/images/BubblingThoughts/bubbling_thoughts01.png"
+        ],
         "technologies": [
             "C#",
             "Unity",
@@ -284,7 +319,9 @@
         "title": "HecticHotel",
         "date": "2025-07",
         "description": "HecticHotel is a recreation of the previously popular chatroom / hangout platform, Habbo Hotel. The Unity WebGL client runs in the browser, and the backend is ASP.NET-based. As part of my \"sysadmin\" learning, I set up my own Linux server to serve the WebGL app and to host the backend in a Docker container.",
-        "image": "/images/HecticHotel/hectic_cafe.png",
+        "images": [
+            "/images/HecticHotel/hectic_hotel01.png"
+        ],
         "technologies": [
             "C#",
             "ASP.NET",

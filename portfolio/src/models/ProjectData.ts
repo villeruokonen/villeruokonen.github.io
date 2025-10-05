@@ -5,7 +5,7 @@ export default interface ProjectData {
     title: string;
     date: string;
     description: string;
-    image: string | null;
+    images: string[];
     technologies: string[];
     roles: string[];
     links: LabeledURL[];

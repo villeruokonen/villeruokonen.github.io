@@ -1,17 +1,17 @@
 import './ModalImage.css'
 
 interface ModalImageProps {
-    url: string | null;
+    paths: string[];
 }
 
 export const ModalImage: React.FC<ModalImageProps> = (props) => {
-    if (!props.url || props.url.length === 0) {
+    if (!props.paths || props.paths.length === 0) {
         return <></>;
     }
 
     return (
         <div className="image-container">
-            <img src={props.url} />
+            <img src={props.paths[0]} />
         </div>
     );
 };
