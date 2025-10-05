@@ -44,7 +44,6 @@ const ProjectList: React.FC = () => {
     return (
         <div>
             <ProjectModal project={selectedProject} onClose={closeModal} children />
-
             <div className="project-list">
                 {projects
                     .sort((a, b) =>

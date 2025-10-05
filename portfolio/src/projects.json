@@ -3,9 +3,9 @@
         "id": 0,
         "title": "Slug Wars",
         "date": "2025-02",
-        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure. The game will be released on Steam in Q1 2025.",
+        "description": "Slug Wars is a multiplayer shooter developed by Hovi Production. I worked on the game for almost the whole year of 2024. The project helped me develop my teamworking skills as well as to learn how to work under pressure.",
         "images": [
-            "/images/SlugWars/slug_wars01.gif"
+            "/images/SlugWars/slug_wars01.jpg"
         ],
         "technologies": [
             "C#",
@@ -32,7 +32,7 @@
         "date": "2024-11",
         "description": "I developed an OpenGL game engine during my studies at Jamk University of Applied Sciences, on the Game Engine Programming course. This course helped me solidify my understanding of C++ and lower-level programming.",
         "images": [
-            "/images/OpenGLGameEngine/opengl_game_engine01.gif"
+            "/images/OpenGLGameEngine/opengl_game_engine01.png"
         ],
         "technologies": [
             "C++",
@@ -318,7 +318,7 @@
         "id": 12,
         "title": "HecticHotel",
         "date": "2025-07",
-        "description": "HecticHotel is a recreation of the previously popular chatroom / hangout platform, Habbo Hotel. The Unity WebGL client runs in the browser, and the backend is ASP.NET-based. As part of my \"sysadmin\" learning, I set up my own Linux server to serve the WebGL app and to host the backend in a Docker container.",
+        "description": "HecticHotel is a recreation of the previously popular chatroom / hangout platform, Habbo Hotel. Dockerized Unity WebGL + ASP.NET proxied through nginx.",
         "images": [
             "/images/HecticHotel/hectic_hotel01.png"
         ],

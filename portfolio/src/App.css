@@ -5,6 +5,19 @@
   text-align: center;
 }
 
+.blurb {
+  font-family: "blurb";
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "blurb";
+  src: url("/fonts/MPLUSCode.ttf");
+}
+
 @media (max-width: 600px) {
   #root {
     padding: 1rem;

@@ -1,9 +1,9 @@
 .card {
     padding: 20px;
     background-color: rgba(66, 69, 70, 0.4);
+    backdrop-filter: saturate(180%) blur(10px);
     border-radius: 8px;
     text-align: left;
-    backdrop-filter: saturate(180%) blur(10px);
     opacity: 0;
     animation: rise 0.5s ease-out forwards;
 }
