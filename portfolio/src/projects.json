@@ -81,7 +81,7 @@
         "id": 3,
         "title": "BrickWorld",
         "date": "2022-12",
-        "description": "A recreation of \"Blockland\". I wanted to figure out how the game's \"brick system\" worked, but as I didn't have access to the source code, I had to recreate it through trial and error. I learned how to generate 3D meshes at runtime to allow for bricks of varying sizes. Coincidentally also one of my first forays into multiplayer and netcode",
+        "description": "A recreation of \"Blockland\" to learn about dynamic mesh generation and building logic. Coincidentally also one of my first forays into multiplayer and netcode.",
         "images": [
             "/images/BrickWorld/brickworld01.png"
         ],
