@@ -1,4 +1,4 @@
-import { FaGithub, FaItchIo, FaSteam } from "react-icons/fa6";
+import { FaGithub, FaItchIo, FaSteam } from 'react-icons/fa6';
 import './PlatformEmblemGroup.css'
 
 const PlatformToEmblem: React.FC<{ platform: string }> = ({ platform }) => {

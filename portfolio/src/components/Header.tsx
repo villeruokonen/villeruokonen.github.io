@@ -5,9 +5,9 @@ import { FaItchIo } from 'react-icons/fa6';
 
 const Header: React.FC = () => {
     const buildEmail = (): string => {
-        const user = "ruokonen";
-        const domain = "v@gmail";
-        const dotcom = ".com";
+    const user = 'ruokonen';
+    const domain = 'v@gmail';
+    const dotcom = '.com';
 
         return user + domain + dotcom;
     }

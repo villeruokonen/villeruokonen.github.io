@@ -1,4 +1,4 @@
-import { LabeledURL } from "../models/LabeledURL";
+import { LabeledURL } from '../models/LabeledURL';
 import './ModalLinkDisplay.css'
 
 interface ModalLinkDisplayProps {

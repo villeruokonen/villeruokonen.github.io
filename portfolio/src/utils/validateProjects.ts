@@ -1,21 +1,27 @@
-import Ajv from "ajv";
+import Ajv, { ValidateFunction } from 'ajv';
 import ProjectSchema from '../projects.schema.json';
 
-export const validateProjects = async (data: unknown): Promise<boolean> => {
-    const ajv = new Ajv();
-    const schemaValid = ajv.validateSchema(ProjectSchema);
-    if (!schemaValid) {
-        console.log("Project schema invalid: " + ajv.errors);
-    }
-    try {
-        const valid = await ajv.validate(ProjectSchema, data)
-        if (!valid)
-            console.log(ajv.errors);
+const ajv = new Ajv();
+let compiledValidator: ValidateFunction | null = null;
 
-        return valid;
+export const validateProjects = async (data: unknown): Promise<boolean> => {
+    if (!compiledValidator) {
+        const schemaValid = ajv.validateSchema(ProjectSchema);
+        if (!schemaValid) {
+            console.error('Project schema invalid: ', ajv.errors);
+            return false;
+        }
+        compiledValidator = ajv.compile(ProjectSchema);
     }
-    catch (err: any) {
+
+    try {
+        const valid = compiledValidator(data) as boolean;
+        if (!valid) {
+            console.error(compiledValidator.errors);
+        }
+        return valid;
+    } catch (err) {
         console.error(err);
         return false;
     }
-}
+};

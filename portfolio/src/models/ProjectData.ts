@@ -1,4 +1,4 @@
-import { LabeledURL } from "./LabeledURL";
+import { LabeledURL } from './LabeledURL';
 
 export default interface ProjectData {
     id: number;

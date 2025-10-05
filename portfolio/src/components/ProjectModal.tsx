@@ -1,13 +1,12 @@
-import { FaX } from "react-icons/fa6";
-import ProjectData from "../models/ProjectData";
+import { FaX } from 'react-icons/fa6';
+import ProjectData from '../models/ProjectData';
 import './ProjectModal.css'
-import ModalLinkDisplay from "./ModalLinkDisplay";
-import { ModalImage } from "./ModalImage";
+import ModalLinkDisplay from './ModalLinkDisplay';
+import { ModalImage } from './ModalImage';
 
 interface ProjectModal {
     project: ProjectData | null;
     onClose: () => void;
-    children: React.ReactNode;
 }
 
 const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {

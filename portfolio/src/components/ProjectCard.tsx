@@ -16,7 +16,7 @@ const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
     const previewLength: number = 100;
-    const ellipsis: string = "...";
+    const ellipsis: string = '...';
     let desc = project.description;
 
     if (desc.length > previewLength) {
@@ -26,14 +26,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
     return (
         <div key={index} className="card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
             <h3 className='title'>
-                {project.title || "Untitled entry"}
+                {project.title || 'Untitled entry'}
                 <PlatformEmblemGroup platforms={project.platforms} />
                 <span className='date'> {new Date(project.date).getFullYear()} </span>
             </h3>
 
             {project.images?.[0] && <Thumbnail src={project.images[0]} />}
 
-            <p className='description'> {desc || "Read more...."} </p>
+            <p className='description'> {desc || 'Read more....'} </p>
 
             <span className="badges-container">
                 <span className='badges'>

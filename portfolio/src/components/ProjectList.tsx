@@ -1,7 +1,7 @@
 import './ProjectList.css'
-import React from "react"
-import ProjectCard from "./ProjectCard"
-import ProjectData from "../models/ProjectData"
+import React from 'react'
+import ProjectCard from './ProjectCard'
+import ProjectData from '../models/ProjectData'
 import { useEffect, useState } from 'react'
 import { getProjects } from '../services/projectService'
 import ProjectModal from './ProjectModal'
@@ -24,7 +24,7 @@ const ProjectList: React.FC = () => {
                 setError(null);
             }
             else {
-                setError("Failed to load projects!");
+                setError('Failed to load projects!');
             }
 
             setLoading(false);
@@ -43,20 +43,16 @@ const ProjectList: React.FC = () => {
 
     return (
         <div>
-            <ProjectModal project={selectedProject} onClose={closeModal} children />
+            <ProjectModal project={selectedProject} onClose={closeModal} />
             <div className="project-list">
-                {projects
-                    .sort((a, b) =>
-                        new Date(b.date).getTime() - new Date(a.date).getTime()
-                    )
-                    .map((p, index) => (
-                        <ProjectCard
-                            key={index}
-                            project={p}
-                            index={index}
-                            onClick={() => openModal(p)} />
+                {projects.map((p, index) => (
+                    <ProjectCard
+                        key={p.id}
+                        project={p}
+                        index={index}
+                        onClick={() => openModal(p)} />
 
-                    ))}
+                ))}
             </div>
         </div>
     );

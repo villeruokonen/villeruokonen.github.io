@@ -1,7 +1,7 @@
-import Skill from "../models/Skill";
-import { getSkills } from "../services/projectService";
-import { useEffect, useState } from "react";
-import TechnologyBadge from "./TechnologyBadge";
+import Skill from '../models/Skill';
+import { getSkills } from '../services/projectService';
+import { useEffect, useState } from 'react';
+import TechnologyBadge from './TechnologyBadge';
 import './SkillsetDisplay.css'
 
 const SkillsetDisplay: React.FC = () => {

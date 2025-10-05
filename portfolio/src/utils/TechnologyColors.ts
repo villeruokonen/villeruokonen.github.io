@@ -1,12 +1,22 @@
-import { technologyColors } from "../technologyColors";
+import { technologyColors } from '../technologyColors';
 
-export const getTechnologyAccentColor = (key: string) : string => 
-{
-    if (key === null) return '#000000';
-    return technologyColors[key]?.accent || '#FFFFFF';
-}
+const sanitizeKey = (key: string | null | undefined): string | null => {
+    if (!key) return null;
+    const trimmed = key.trim();
+    return trimmed.length ? trimmed : null;
+};
+
+export const getTechnologyAccentColor = (key: string): string => {
+    const k = sanitizeKey(key);
+    return (k && technologyColors[k]?.accent) || '#FFFFFF';
+};
 
 export const getTechnologyColor = (key: string): string => {
-    if (key === null) return '#000000';
-    return technologyColors[key]?.primary || '#000000';
-}
+    const k = sanitizeKey(key);
+    return (k && technologyColors[k]?.primary) || '#000000';
+};
+
+export const getTechnologyColors = (key: string): { primary: string; accent: string } => ({
+    primary: getTechnologyColor(key),
+    accent: getTechnologyAccentColor(key)
+});
