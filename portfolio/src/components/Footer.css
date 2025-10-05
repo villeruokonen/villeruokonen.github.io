@@ -1,10 +1,40 @@
+footer::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    mask-image: linear-gradient(rgba(255, 255, 255, 0), black);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    height: 64px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 footer {
-    position: static;
+    position: fixed;
     color: #e4e4e4;
-    line-height: 1;
-    text-align: center;
+    height: 64px;
+    line-height: 0.4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-contents {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    height: 32px;
 }
 
 .copyright {
     font-weight: bold;
+}
+
+.update-date {
+    font-size: small;
+}
+
+.views {
+    font-size: small;
 }

@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+main {
+  padding-bottom: 48px;  
+}
+
 .blurb {
   font-family: "blurb";
   max-width: 60%;
