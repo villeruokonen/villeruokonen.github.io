@@ -332,12 +332,37 @@
             "Game Programmer"
         ],
         "platforms": [
-            "browser"
+            "web"
         ],
         "links": [
             {
                 "url": "https://hectic.ruokonen.dedyn.io",
                 "title": "Play HecticHotel in browser"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "RuoSaves",
+        "date": "2025-06",
+        "description": "RuoSaves is a developer-friendly save system that makes saving and loading game state in Unity simple and modular.",
+        "images": [
+            "/images/RuoSaves/ruosaves01.webp"
+        ],
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Asset Developer"
+        ],
+        "platforms": [
+            "unity-asset-store"
+        ],
+        "links": [
+            {
+                "url": "https://assetstore.unity.com/packages/tools/utilities/ruosaves-320376",
+                "title": "Buy RuoSaves on Unity Asset Store"
             }
         ]
     }
