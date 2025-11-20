@@ -1,0 +1,5 @@
+.product-list {
+    gap: 10px;
+    place-items: center;
+    align-self: center;
+}

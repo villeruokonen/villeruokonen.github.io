@@ -3,9 +3,9 @@ import ProjectData from '../models/ProjectData';
 import { PlatformEmblemGroup } from './PlatformEmblemGroup';
 import RoleBadge from './RoleBadge';
 import TechnologyBadge from './TechnologyBadge';
-import './ProjectCard.css'
+import './ShippedProductCard.css'
 
-interface ProjectCardProps {
+interface ProductCardProps {
     project: ProjectData;
     index: number;
     onClick: () => void;
@@ -25,7 +25,7 @@ const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
     ) : null
 );
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
+const ShippedProductCard: React.FC<ProductCardProps> = ({ project, index, onClick }) => {
     const previewLength: number = 100;
     const ellipsis: string = '...';
     let desc = project.description;
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
     }
 
     return (
-        <div key={index} className="card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
+        <div key={index} className="product-card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
             <h3 className='title'>
                 {project.title || 'Untitled entry'}
                 <PlatformEmblemGroup platforms={project.platforms} />
@@ -64,4 +64,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
     );
 }
 
-export default React.memo(ProjectCard);
+export default React.memo(ShippedProductCard);

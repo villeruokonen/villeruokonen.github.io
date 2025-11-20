@@ -64,6 +64,6 @@
             "id",
             "title"
         ],
-        "additionalProperties": false
+        "additionalProperties": true
     }
 }

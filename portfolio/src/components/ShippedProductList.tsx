@@ -1,26 +1,26 @@
-import './ProjectList.css'
 import React, { useCallback } from 'react'
-import ProjectCard from './ProjectCard'
 import ProjectData from '../models/ProjectData'
 import { useEffect, useState } from 'react'
-import { getProjects } from '../services/projectService'
+import { getShippedProducts } from '../services/projectService'
 import ProjectModal from './ProjectModal'
+import ShippedProductCard from './ShippedProductCard'
+import './ShippedProductList.css'
 
-const ProjectList: React.FC = () => {
-    const [projects, setProjects] = useState<ProjectData[]>([]);
-    const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+const ShippedProductList: React.FC = () => {
+    const [products, setProducts] = useState<ProjectData[]>([]);
+    const [selectedProjuct, setSelectedProduct] = useState<ProjectData | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>();
 
-    const openModal = useCallback((project: ProjectData) => setSelectedProject(project), []);
-    const closeModal = useCallback(() => setSelectedProject(null), []);
+    const openModal = useCallback((project: ProjectData) => setSelectedProduct(project), []);
+    const closeModal = useCallback(() => setSelectedProduct(null), []);
 
     useEffect(() => {
         const loadProjects = async () => {
-            const data = await getProjects();
+            const data = await getShippedProducts();
 
             if (data) {
-                setProjects(data.filter(project => project.isShippedProduct === false));
+                setProducts(data);
                 setError(null);
             }
             else {
@@ -41,13 +41,17 @@ const ProjectList: React.FC = () => {
         return <h1>{error}</h1>
     }
 
+    if (products.length == 0) {
+        return <></>
+    }
+
     return (
         <>
-            <h2>Other projects</h2>
-            <ProjectModal project={selectedProject} onClose={closeModal} />
-            <div className="project-list">
-                {projects.map((p, index) => (
-                    <ProjectCard
+            <h2>Shipped products</h2>
+            <ProjectModal project={selectedProjuct} onClose={closeModal} />
+            <div className="product-list">
+                {products.map((p, index) => (
+                    <ShippedProductCard
                         key={p.id}
                         project={p}
                         index={index}
@@ -59,4 +63,4 @@ const ProjectList: React.FC = () => {
     );
 }
 
-export default ProjectList;
+export default ShippedProductList;
