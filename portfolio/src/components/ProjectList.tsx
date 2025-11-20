@@ -1,10 +1,10 @@
-import './ProjectList.css'
 import React, { useCallback } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectData from '../models/ProjectData'
 import { useEffect, useState } from 'react'
 import { getProjects } from '../services/projectService'
 import ProjectModal from './ProjectModal'
+import './ProjectList.css'
 
 const ProjectList: React.FC = () => {
     const [projects, setProjects] = useState<ProjectData[]>([]);
