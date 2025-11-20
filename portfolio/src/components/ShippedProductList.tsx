@@ -47,9 +47,9 @@ const ShippedProductList: React.FC = () => {
 
     return (
         <>
-            <h2>Shipped products</h2>
+            <h2>Shipped Products</h2>
             <ProjectModal project={selectedProjuct} onClose={closeModal} />
-            <div className="product-list">
+            <div className="shipped-products-container">
                 {products.map((p, index) => (
                     <ShippedProductCard
                         key={p.id}

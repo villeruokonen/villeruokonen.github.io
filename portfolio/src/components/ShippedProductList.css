@@ -1,5 +1,15 @@
-.product-list {
-    gap: 10px;
-    place-items: center;
-    align-self: center;
+.shipped-products-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .shipped-products-container {
+        gap: 10px;
+    }
 }

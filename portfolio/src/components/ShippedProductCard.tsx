@@ -1,8 +1,6 @@
 import React from 'react';
 import ProjectData from '../models/ProjectData';
 import { PlatformEmblemGroup } from './PlatformEmblemGroup';
-import RoleBadge from './RoleBadge';
-import TechnologyBadge from './TechnologyBadge';
 import './ShippedProductCard.css'
 
 interface ProductCardProps {
@@ -26,40 +24,16 @@ const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
 );
 
 const ShippedProductCard: React.FC<ProductCardProps> = ({ project, index, onClick }) => {
-    const previewLength: number = 100;
-    const ellipsis: string = '...';
-    let desc = project.description;
-
-    if (desc.length > previewLength) {
-        desc = project.description.slice(0, previewLength - ellipsis.length).trimEnd() + ellipsis;
-    }
-
     return (
         <div key={index} className="product-card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
-            <h3 className='title'>
+            <h3 className='product-title'>
                 {project.title || 'Untitled entry'}
-                <PlatformEmblemGroup platforms={project.platforms} />
-                <span className='date'> {new Date(project.date).getFullYear()} </span>
             </h3>
-
+            <div className="product-platforms">
+                <PlatformEmblemGroup platforms={project.platforms} />
+            </div>
+            
             {project.images?.[0] && <Thumbnail src={project.images[0]} />}
-
-            <p className='description'> {desc || 'Read more....'} </p>
-
-            <span className="badges-container">
-                <span className='badges'>
-                    <span className='badges-technologies'>
-                        {project.technologies.map(t => (
-                            <TechnologyBadge technologyName={t} key={t} />
-                        ))}
-                    </span>
-                    <span className='badges-roles'>
-                        {project.roles.map(r => (
-                            <RoleBadge title={r} key={r} />
-                        ))}
-                    </span>
-                </span>
-            </span>
         </div>
     );
 }
