@@ -20,7 +20,7 @@ const ProjectList: React.FC = () => {
             const data = await getProjects();
 
             if (data) {
-                setProjects(data.filter(project => project.isShippedProduct === false));
+                setProjects(data.filter(project => !project.isShippedProduct));
                 setError(null);
             }
             else {
