@@ -9,13 +9,13 @@ export const getShippedProducts = async(): Promise<Projects | null> => {
     {
         const projects = await getProjects();
         if (projects) {
-            return projects.filter(project => project.isShippedProduct === true);
+            return projects.filter(project => project.isShippedProduct);
         }
         return null;
     }
     catch (err)
     {
-
+        console.log(err);
     }
 
     return null;
