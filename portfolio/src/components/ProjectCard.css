@@ -1,6 +1,6 @@
-.card {
+.project-card {
     padding: 0 20px 20px 20px;
-    background-color: rgba(66, 69, 70, 0.4);
+    background-color: rgba(45, 63, 69, 0.4);
     backdrop-filter: saturate(180%) blur(10px);
     border-radius: 8px;
     text-align: left;
@@ -28,21 +28,21 @@
     right: 24px;
 }
 
-.thumbnail {
+.project-thumbnail {
     width: 100%;
     height: 200%;
     height: auto;
     border-radius: 4px;
 }
 
-.thumbnail-cutoff {
+.project-thumbnail-cutoff {
     width: 100%;
     height: 192px;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
-.card:hover {
+.project-card:hover {
     backface-visibility: hidden;
     transition: all 0.1s ease-in-out;
     background-color: rgba(45, 47, 47, 0.5);
@@ -52,6 +52,12 @@
 .p {
     color: aliceblue;
     line-height: 1.5;
+}
+
+.platforms {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .badges-container {
@@ -105,7 +111,7 @@
         background-color: rgba(45, 47, 47, 0.8);
     }
 
-    .thumbnail {
+    .project-thumbnail {
         image-rendering: auto;
         height: auto;
         max-height: 192px;

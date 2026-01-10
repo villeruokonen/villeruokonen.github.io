@@ -24,7 +24,8 @@
         ],
         "platforms": [
             "steam"
-        ]
+        ],
+        "isShippedProduct": true
     },
     {
         "id": 1,
@@ -50,7 +51,8 @@
                 "url": "https://github.com/villeruokonen/GameEngineProgramming",
                 "title": "GitHub repository"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 2,
@@ -75,7 +77,8 @@
                 "title": "GitHub repository",
                 "url": "https://github.com/villeruokonen/villeruokonen.github.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 3,
@@ -100,7 +103,8 @@
                 "url": "https://villeruo.itch.io/brickworld",
                 "title": "Play BrickWorld in browser"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 4,
@@ -125,7 +129,8 @@
                 "url": "https://villeruo.itch.io/one-hour-game",
                 "title": "Play One hour game in browser"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 5,
@@ -152,7 +157,8 @@
                 "url": "https://oguzhan00yildiz.itch.io/royal-banter",
                 "title": "Download Royal Banter on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 6,
@@ -179,7 +185,8 @@
                 "url": "https://oguzhan00yildiz.itch.io/halloween-madness",
                 "title": "Download Halloween Madness on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 7,
@@ -204,7 +211,8 @@
                 "url": "https://github.com/Surkia-Games/The-Game",
                 "title": "GitHub repository"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 8,
@@ -231,7 +239,8 @@
                 "url": "https://oguzhan00yildiz.itch.io/curebot",
                 "title": "Download CureBot on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 9,
@@ -258,7 +267,8 @@
                 "url": "https://villeruo.itch.io/coin-game",
                 "title": "Download Coin Game on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 10,
@@ -285,7 +295,8 @@
                 "url": "https://giacomo-trenna.itch.io/hissipoika-simulator",
                 "title": "Download Hissipoika Simulator on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 11,
@@ -312,7 +323,8 @@
                 "url": "https://villeruo.itch.io/bubbling-thoughts",
                 "title": "Play Bubbling Thoughts on itch.io"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 12,
@@ -339,7 +351,8 @@
                 "url": "https://hectic.ruokonen.dedyn.io",
                 "title": "Play HecticHotel in browser"
             }
-        ]
+        ],
+        "isShippedProduct": false
     },
     {
         "id": 13,
@@ -364,6 +377,35 @@
                 "url": "https://assetstore.unity.com/packages/tools/utilities/ruosaves-320376",
                 "title": "Buy RuoSaves on Unity Asset Store"
             }
-        ]
+        ],
+        "isShippedProduct": true
+    },
+    {
+        "id": 14,
+        "title": "LabRATory",
+        "date": "2025-12",
+        "description": "When things go wrong in the lab, two brilliant scientists are transformed into the animals they were experimenting on -- RATS! LabRATory is a \"tail-based\", local co-op puzzle platformer. I was in charge of sounds and music as well as programming.",
+        "images": [
+            "/images/LabRATory/labratory01.png"
+        ],
+        "technologies": [
+            "C#",
+            "Unity"
+        ],
+        "roles": [
+            "Game Developer",
+            "Composer",
+            "Game Programmer"
+        ],
+        "platforms": [
+            "steam"
+        ],
+        "links": [
+            {
+                "url": "https://store.steampowered.com/app/4078280/LabRATory/",
+                "title": "Download the free LabRATory demo on Steam"
+            }
+        ],
+        "isShippedProduct": true
     }
 ]

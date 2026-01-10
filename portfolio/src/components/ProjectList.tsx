@@ -1,10 +1,9 @@
-import './ProjectList.css'
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectData from '../models/ProjectData'
-import { useEffect, useState } from 'react'
 import { getProjects } from '../services/projectService'
 import ProjectModal from './ProjectModal'
+import './ProjectList.css'
 
 const ProjectList: React.FC = () => {
     const [projects, setProjects] = useState<ProjectData[]>([]);
@@ -20,7 +19,7 @@ const ProjectList: React.FC = () => {
             const data = await getProjects();
 
             if (data) {
-                setProjects(data);
+                setProjects(data.filter(project => !project.isShippedProduct));
                 setError(null);
             }
             else {
@@ -43,6 +42,7 @@ const ProjectList: React.FC = () => {
 
     return (
         <>
+            <h2>Other projects</h2>
             <ProjectModal project={selectedProject} onClose={closeModal} />
             <div className="project-list">
                 {projects.map((p, index) => (

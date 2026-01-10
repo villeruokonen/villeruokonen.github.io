@@ -4,6 +4,8 @@ import ProjectData from '../models/ProjectData';
 import './ProjectModal.css'
 import ModalLinkDisplay from './ModalLinkDisplay';
 import { ModalImage } from './ModalImage';
+import RoleBadge from './RoleBadge';
+import TechnologyBadge from './TechnologyBadge';
 
 interface ProjectModal {
     project: ProjectData | null;
@@ -19,6 +21,20 @@ const ProjectModal: React.FC<ProjectModal> = ({ project, onClose }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <h2>{project.title}</h2>
                 <ModalImage paths={project.images}></ModalImage>
+                <span className="badges-container">
+                    <span className='badges'>
+                        <span className='badges-technologies'>
+                            {project.technologies.map(t => (
+                                <TechnologyBadge technologyName={t} key={t} />
+                            ))}
+                        </span>
+                        <span className='badges-roles'>
+                            {project.roles.map(r => (
+                                <RoleBadge title={r} key={r} />
+                            ))}
+                        </span>
+                    </span>
+                </span>
                 <p>{project.description}</p>
                 <ModalLinkDisplay links={project.links} />
                 <button className="modal-close" onClick={onClose}>

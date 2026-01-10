@@ -16,6 +16,9 @@
             "description": {
                 "type": "string"
             },
+            "isShippedProduct": {
+                "type": "boolean"
+            },
             "images": {
                 "type": "array",
                 "items": {
@@ -62,8 +65,8 @@
         },
         "required": [
             "id",
-            "title"
-        ],
-        "additionalProperties": false
+            "title",
+            "isShippedProduct"
+        ]
     }
 }

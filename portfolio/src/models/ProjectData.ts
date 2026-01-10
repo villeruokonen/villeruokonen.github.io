@@ -10,4 +10,5 @@ export default interface ProjectData {
     roles: string[];
     links: LabeledURL[];
     platforms: string[];
+    isShippedProduct: boolean;
 }

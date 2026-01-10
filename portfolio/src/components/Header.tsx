@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
     return (
         <header>
-            <img className="logo" src="vr_logo.png"></img>
+            <img className="face" src="face.png"></img>
             <h1>Ville Ruokonen</h1>
             <nav>
                 <ul className="socials-list">

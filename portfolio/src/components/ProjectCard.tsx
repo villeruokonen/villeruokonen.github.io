@@ -1,9 +1,9 @@
 import React from 'react';
 import ProjectData from '../models/ProjectData';
 import { PlatformEmblemGroup } from './PlatformEmblemGroup';
-import './ProjectCard.css'
 import RoleBadge from './RoleBadge';
 import TechnologyBadge from './TechnologyBadge';
+import './ProjectCard.css'
 
 interface ProjectCardProps {
     project: ProjectData;
@@ -13,10 +13,10 @@ interface ProjectCardProps {
 
 const Thumbnail: React.FC<{ src: string | null }> = ({ src }) => (
     src ? (
-        <div className="thumbnail-cutoff">
-            <img 
-                className="thumbnail" 
-                src={src} 
+        <div className="project-thumbnail-cutoff">
+            <img
+                className="project-thumbnail"
+                src={src}
                 alt="Project thumbnail"
                 loading="lazy"
                 decoding="async"
@@ -35,10 +35,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) =>
     }
 
     return (
-        <div key={index} className="card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
+        <div key={index} className="project-card" onClick={onClick} style={{ animationDelay: `${index * 0.1}s` }}>
             <h3 className='title'>
                 {project.title || 'Untitled entry'}
-                <PlatformEmblemGroup platforms={project.platforms} />
+                <span className='platforms'>
+                    <PlatformEmblemGroup platforms={project.platforms} />
+                </span>
                 <span className='date'> {new Date(project.date).getFullYear()} </span>
             </h3>
 
