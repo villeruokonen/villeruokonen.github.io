@@ -1,7 +1,6 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectData from '../models/ProjectData'
-import { useEffect, useState } from 'react'
 import { getProjects } from '../services/projectService'
 import ProjectModal from './ProjectModal'
 import './ProjectList.css'
