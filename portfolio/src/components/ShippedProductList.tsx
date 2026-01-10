@@ -41,7 +41,7 @@ const ShippedProductList: React.FC = () => {
         return <h1>{error}</h1>
     }
 
-    if (products.length == 0) {
+    if (products.length === 0) {
         return <></>
     }
 
