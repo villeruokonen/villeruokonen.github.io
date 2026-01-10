@@ -8,7 +8,7 @@ import './ShippedProductList.css'
 
 const ShippedProductList: React.FC = () => {
     const [products, setProducts] = useState<ProjectData[]>([]);
-    const [selectedProjuct, setSelectedProduct] = useState<ProjectData | null>(null);
+    const [selectedProduct, setSelectedProduct] = useState<ProjectData | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>();
 
@@ -48,7 +48,7 @@ const ShippedProductList: React.FC = () => {
     return (
         <>
             <h2>Shipped products</h2>
-            <ProjectModal project={selectedProjuct} onClose={closeModal} />
+            <ProjectModal project={selectedProduct} onClose={closeModal} />
             <div className="shipped-products-container">
                 {products.map((p, index) => (
                     <ShippedProductCard
